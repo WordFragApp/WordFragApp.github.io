@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WordFrag - Master words, one fragment at a time">
+    <title>WordFrag - Word Mastery App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <span class="logo-icon">W</span>
+                    <span class="logo-text">WordFrag</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#features">How It Works</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#download">Download</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Daily Puzzle Game • iOS</div>
+                <h1 class="hero-title">
+                    Piece Together Words,<br>
+                    <span class="gradient-text">One Fragment at a Time</span>
+                </h1>
+                <p class="hero-description">
+                    A daily word puzzle game where you combine fragments to form complete words.
+                    New puzzles every day with smart feedback to help you solve the challenge in 6 attempts or less.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">Get Started</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Puzzle Per Day</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Attempts to Solve</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Practice Mode</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="gradient-blob blob-3"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-description">Simple to learn, challenging to master</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Daily Puzzles</h3>
+                    <p class="feature-description">One new puzzle every day, generated using date-based randomization. Everyone solves the same puzzle each day.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Pair Fragments</h3>
+                    <p class="feature-description">Match word fragments to create complete words. Each fragment is used exactly once in the puzzle.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Feedback</h3>
+                    <p class="feature-description">Green for correct pairs, yellow for right fragments in wrong pairs, gray for incorrect. Use logic to solve!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">6 Attempts</h3>
+                    <p class="feature-description">You have 6 submissions to solve each puzzle. Use each attempt wisely to deduce the correct pairings.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Track Your Streak</h3>
+                    <p class="feature-description">Build and maintain your daily streak. Track wins, losses, and average attempts over time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Practice Mode</h3>
+                    <p class="feature-description">Play unlimited random puzzles anytime. Perfect your skills without affecting your daily streak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">What is WordFrag?</h2>
+                    <p class="about-paragraph">
+                        WordFrag is a daily word puzzle game where you recombine word fragments into complete words.
+                        Each puzzle presents a fixed set of fragments that pair to form valid English words.
+                        Your challenge is to discover the correct pairings using logic, vocabulary knowledge, and
+                        color-coded feedback after each attempt.
+                    </p>
+                    <p class="about-paragraph">
+                        Similar to other popular daily puzzle games, WordFrag gives you a fresh challenge every day.
+                        All players worldwide solve the same puzzle, making it perfect for sharing and comparing
+                        results with friends. Miss the pressure? Practice Mode lets you play unlimited puzzles anytime!
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Date-based puzzle generation</span>
+                        </div>
+                        <div class="about-feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Color-coded feedback system</span>
+                        </div>
+                        <div class="about-feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Fully offline - no internet required</span>
+                        </div>
+                        <div class="about-feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Share your results with friends</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="app-mockup">
+                        <div class="mockup-screen">
+                            <div class="mockup-header">
+                                <div class="mockup-dot"></div>
+                                <div class="mockup-dot"></div>
+                                <div class="mockup-dot"></div>
+                            </div>
+                            <div class="mockup-content">
+                                <div class="word-card">
+                                    <div class="word-fragment">MICRO</div>
+                                    <div class="word-hint">+ SCOPE</div>
+                                    <div class="word-complete">= MICROSCOPE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Modes Section -->
+    <section class="game-modes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Game Modes</h2>
+                <p class="section-description">Choose your challenge</p>
+            </div>
+            <div class="modes-grid">
+                <div class="mode-card">
+                    <div class="mode-header">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                        <h3>Daily Puzzle</h3>
+                    </div>
+                    <p class="mode-description">
+                        One fresh puzzle every day. Everyone worldwide solves the same puzzle,
+                        generated using deterministic date-based randomization. Build your streak
+                        and share your results!
+                    </p>
+                    <ul class="mode-features">
+                        <li>New puzzle at midnight</li>
+                        <li>6 attempts to solve</li>
+                        <li>Track your daily streak</li>
+                        <li>Share results with friends</li>
+                    </ul>
+                </div>
+                <div class="mode-card">
+                    <div class="mode-header">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 16v-4"/>
+                            <path d="M12 8h.01"/>
+                        </svg>
+                        <h3>Practice Mode</h3>
+                    </div>
+                    <p class="mode-description">
+                        Play unlimited randomly generated puzzles anytime. Perfect for practicing
+                        your skills, learning the game mechanics, or simply enjoying more puzzles
+                        without waiting for tomorrow.
+                    </p>
+                    <ul class="mode-features">
+                        <li>Unlimited puzzles</li>
+                        <li>Random generation</li>
+                        <li>No streak pressure</li>
+                        <li>Play anytime, anywhere</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2 class="section-title">Ready to Start Puzzling?</h2>
+                <p class="section-description">
+                    Download WordFrag and challenge your mind every day
+                </p>
+                <div class="download-buttons">
+                    <a href="#" class="download-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        <div class="download-btn-text">
+                            <span class="download-label">Download on the</span>
+                            <span class="download-store">App Store</span>
+                        </div>
+                    </a>
+                </div>
+                <p class="download-note">Free to download • No credit card required</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">W</span>
+                        <span class="logo-text">WordFrag</span>
+                    </div>
+                    <p class="footer-tagline">Master words, one fragment at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WordFrag. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
