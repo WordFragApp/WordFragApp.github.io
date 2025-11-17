@@ -117,6 +117,12 @@ const animateStats = () => {
             const text = stat.textContent;
             const hasPlus = text.includes('+');
             const number = parseInt(text.replace(/\D/g, ''));
+
+            // Skip animation for non-numeric values (like "Unlimited" or "∞")
+            if (isNaN(number)) {
+                return;
+            }
+
             const suffix = hasPlus ? '+' : '';
             const duration = 2000;
             const increment = number / (duration / 16);
